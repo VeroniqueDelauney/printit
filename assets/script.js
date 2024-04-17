@@ -51,7 +51,7 @@ for (i = 0; i < totalSlides; i++) {
 	dots.innerHTML += createDot;
 }
 
-
+// Ajout du changement d'image lorsqu'on clique sur un dot
 let dotsToListen = document.querySelectorAll("span.dot");
 if(dotsToListen) {
 	dotsToListen.forEach(dot => {
@@ -80,7 +80,7 @@ function updateSlider() {
 
 	// Gestion des dots
 	let activeDot = document.querySelector("span.dot.dot_selected");
-	if(activeDot) activeDot.classList.remove("dot_selected"); // Pas besoin de mettre acolades si if en ligne
+	if(activeDot) activeDot.classList.remove("dot_selected");
 	document.querySelector("span.dot[data-num='"+ currentSlideNumber +"']").classList.add("dot_selected");	
 
 
